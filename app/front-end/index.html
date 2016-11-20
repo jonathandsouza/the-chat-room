@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CHAT APP</title>
+
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/node_modules/socket.io-client/socket.io.js"></script>
+	<script src="/app/front-end/main.js"></script>
+
+</head>
+<body ng-app="chat">
+
+<div ng-controller="MainController as ctrl">
+
+	EVENT:<input type="text" ng-model="ctrl.event">
+
+	JSON: <input type="text" ng-model="ctrl.json">
+
+
+	<button ng-click="trigger();">TRIGGER</button>
+
+</div>
+
+</body>
+</html>
