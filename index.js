@@ -11,16 +11,16 @@ var serverApplication = require('./app/server/app')({io});
 
 serverApplication.init();
 
+
+//SERVING STATIC FILES
 app.use("/bower_components", express.static(path.join(__dirname + '/bower_components')));
 app.use('/node_modules', express.static(path.join(__dirname + '/node_modules')));
+app.use('/assets', express.static(path.join(__dirname + '/app/front-end/assets')));
 app.use("/app", express.static(path.join(__dirname + '/app')));
+app.use("/scripts", express.static(path.join(__dirname + '/app/front-end/scripts')));
 
 
-app.get('/test', function (req, res) {
-	res.send('api has started');
-});
-
-app.get('/chat', function (req, res) {
+app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname + '/app/front-end/index.html'))
 });
 
