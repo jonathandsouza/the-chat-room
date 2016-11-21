@@ -8,45 +8,43 @@
 .login-page-container {
 
 	position: absolute;
-	top: 150px;
-	right: 40%;
+	top: 100px;
+	right: 30%;
 
 	.title-block {
 
 		.title {
 			color: white;
+			font-size: 60px;
 		}
 	}
 
 	.login-widget {
 
-		.glyp-container {
-			width: 40px;
-			height: 40px;
-			background: @color-purple-dark;
-			border-radius: 50%;
-			display: inline-block;
+		margin-top: 40px;
+		width: 100%;
+		display: inline-block;
 
-			.glyphicon {
-				color: white;
-				top: 0px;
-				left: 9px;
-				font-size: 40px;
-				font-weight: bolder;
-			}
+		input[type='text'] {
+			border-bottom: 5px solid @color-purple-dark;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			background: #b013df;
+			color: white;
+			width: 100%;
+			border-radius: 0px;
+			box-shadow: none;
 		}
 
-		.login-text-box-container {
-			display: inline-block;
-			.input-text {
-				border-bottom: 5px solid black;
-				border-top: none;
-				border-right: none;
-				border-left: none;
-				background: @color-purple;
-			}
+		.glyphicon {
+			color: @color-purple-dark;
 		}
 
+		input[type='text'], .glyphicon {
+
+			font-size: 35px;
+		}
 	}
 
 }

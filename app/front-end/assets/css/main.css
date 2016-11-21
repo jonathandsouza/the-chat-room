@@ -1,5 +1,6 @@
 /* less core */
 /*Core imports */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:400i');
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6723,6 +6724,10 @@ button.close {
     display: none !important;
   }
 }
+/*core styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 /*Page:root */
 .login-page-background {
   min-height: 100%;
@@ -6732,33 +6737,33 @@ button.close {
 }
 .login-page-container {
   position: absolute;
-  top: 150px;
-  right: 40%;
+  top: 100px;
+  right: 30%;
 }
 .login-page-container .title-block .title {
   color: white;
+  font-size: 60px;
 }
-.login-page-container .login-widget .glyp-container {
-  width: 40px;
-  height: 40px;
-  background: #550055;
-  border-radius: 50%;
+.login-page-container .login-widget {
+  margin-top: 40px;
+  width: 100%;
   display: inline-block;
 }
-.login-page-container .login-widget .glyp-container .glyphicon {
-  color: white;
-  top: 0px;
-  left: 9px;
-  font-size: 40px;
-  font-weight: bolder;
-}
-.login-page-container .login-widget .login-text-box-container {
-  display: inline-block;
-}
-.login-page-container .login-widget .login-text-box-container .input-text {
-  border-bottom: 5px solid black;
+.login-page-container .login-widget input[type='text'] {
+  border-bottom: 5px solid #550055;
   border-top: none;
   border-right: none;
   border-left: none;
   background: #b013df;
+  color: white;
+  width: 100%;
+  border-radius: 0px;
+  box-shadow: none;
+}
+.login-page-container .login-widget .glyphicon {
+  color: #550055;
+}
+.login-page-container .login-widget input[type='text'],
+.login-page-container .login-widget .glyphicon {
+  font-size: 35px;
 }
